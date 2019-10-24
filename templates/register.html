@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<form method="POST" action="">
+    <div class="row">
+        {{ form.username }}
+        {{ form.username.label }}
+    </div>
+    <div class="row">
+        {{ form.email }}
+        {{ form.email.label }}
+    </div>
+    <div class="row">
+        {{ form.password }}
+        {{ form.password.label }}
+    </div>
+    <div class="row">
+        {{ form.confirmPassword }}
+        {{ form.confirmPassword.label }}
+    </div>
+</form>
+
+{% endblock %}
